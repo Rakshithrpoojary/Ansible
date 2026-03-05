@@ -23,7 +23,7 @@
     name: nginx
     state: started
 
-- name: Call Rstart
+- name: Copy
   template: src=index.html dest=/usr/share/nginx/html/index.html
 
 - name: Call Rstart
