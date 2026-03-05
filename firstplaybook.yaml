@@ -3,4 +3,8 @@
   gather_facts: false
   roles: 
     - python
+
+- name: Call Rstart
+  notify: Restart Nginx
+
   

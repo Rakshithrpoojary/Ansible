@@ -22,3 +22,9 @@
   service:
     name: nginx
     state: started
+
+- name : Restart Nginx
+  become: yes
+  service:
+    name: nginx
+    state: restarted
