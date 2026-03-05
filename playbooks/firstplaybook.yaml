@@ -1,6 +1,5 @@
 ---
 - hosts: all
   gather_facts: false
-  tasks:
-  - name: Install python
-    raw: sudo apt-get update -y && sudo apt-get install -y python3
+  role: python
+  
