@@ -4,11 +4,12 @@
   roles: 
     - python
 
-- name : Restart Nginx
-  become: yes
-  service:
-    name: nginx
-    state: restarted
+  handlers:
+    - name : Restart Nginx
+      become: yes
+      service:
+        name: nginx
+        state: restarted
 
 
   
