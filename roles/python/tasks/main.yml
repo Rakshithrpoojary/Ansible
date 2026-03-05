@@ -1,5 +1,5 @@
 ---
-name: First yaml
-hosts: all
-roles:
-  - python
+- name: First yaml
+  hosts: all
+  roles:
+    - python
