@@ -5,3 +5,8 @@
     name:
       - python3-pip
     update_cache: yes
+
+- name: Create directory
+  file:
+    path: ./rak
+    state: directory
