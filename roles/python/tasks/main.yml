@@ -1,0 +1,5 @@
+---
+name: First yaml
+hosts: all
+roles:
+  - python
