@@ -4,8 +4,11 @@
   roles: 
     - python
 
-- name: Call Rstart
-  notify:
-    - Restart Nginx
+- name : Restart Nginx
+  become: yes
+  service:
+    name: nginx
+    state: restarted
+
 
   

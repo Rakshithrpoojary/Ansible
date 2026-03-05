@@ -23,8 +23,11 @@
     name: nginx
     state: started
 
-- name : Restart Nginx
-  become: yes
-  service:
-    name: nginx
-    state: restarted
+- name: Call Rstart
+  template: src=index.html dest=/usr/share/nginx/html/index.html
+
+- name: Call Rstart
+  template: src=update.html dest=/usr/share/nginx/html/index.html
+  notify:
+    - Restart Nginx
+
