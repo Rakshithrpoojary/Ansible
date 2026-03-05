@@ -1,5 +1,7 @@
 ---
 - name: First yaml
-  hosts: all
-  roles:
-    - python
+  become: yes
+  apt:
+    name:
+      - python3-pip
+    update_cache: yes
