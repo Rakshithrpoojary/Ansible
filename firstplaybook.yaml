@@ -3,13 +3,4 @@
   gather_facts: false
   roles: 
     - python
-
-  handlers:
-    - name : Restart Nginx
-      become: yes
-      service:
-        name: nginx
-        state: restarted
-
-
   

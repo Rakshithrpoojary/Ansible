@@ -34,3 +34,25 @@
 - name: debug
   debug:
     var: package_name
+
+- name: debug
+  debug:
+    msg: "Hi Rakshith poojary"
+  when: is_enabled
+
+- name: List
+  debug:
+    var: fruits[0]
+
+- name: Dictionary
+  debug:
+    var: newfruits.apple
+
+- name: registerss
+  command: echo "{{ newfruits["apple"] }}"
+  register: hi
+
+- name: display register
+  debug:
+    var: hi.stdout
+

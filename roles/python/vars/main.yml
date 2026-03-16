@@ -1,1 +1,9 @@
 package_name: rakshith
+is_enabled: false
+fruits:
+  - apple
+  - banana
+
+newfruits:
+  apple: 100
+  orange: 200
