@@ -1,0 +1,105 @@
+In ansible to see the config we use
+ansible --version
+
+ansible [core 2.20.3]
+  config file = /home/rakpooja/Ansible-2/ansible.cfg
+  configured module search path = ['/home/rakpooja/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/rakpooja/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0] (/usr/bin/python3)
+  jinja version = 3.1.2
+  pyyaml version = 6.0.1 (with libyaml v0.2.5)
+
+You can chane the path by exporting config ANSIBLE_CONFIG=/home/rakpooja/Ansible/ansible.cfg
+
+in ansible if you pass var in commands will get more prcedence
+ansible-playbook playbook.yaml -e "app_port=8080"
+
+in ansible inside the group_vars you can create yaml file matching the host and set the ansible_user and ansible_ssh_private_key_file path
+ansible_user:
+ansible_ssh_private_key_file:
+
+if you want to set for all hosts you can create 
+all.yaml
+
+You can also create the host_vars folder and for specific host you can set the user and file path
+host_vars/13.204.46.194.yaml
+ansible_user:
+ansible_ssh_private_key_file:
+This overrides the group_vars
+
+
+You can also use alias in the hosts
+server1 ansible_host=13.204.46.194 
+In this case in host_vars file you must use the server1.yaml file name
+
+If ansible controller in same vpc use the pvt ip or you need to use the pub ip
+
+In ansible config we can pass the defaults
+like inventory=inventories/hosts then we no need to specify =i and path in ansible-playbook commands
+
+when we write 
+  update_cache: yes  it means sudo apt update
+
+  to stop nginx first stop it
+
+  -name: nginx stop
+   service:
+        name: nginx
+        state: stopped
+    ignore_errors: yes
+
+    -name :nginx uninstall
+     service:
+        name: nginx
+        state: absent
+        purge: yes
+        update_cache: yes
+
+to test the connection we use 
+ansible hostname -m ping
+ansible web -m ping
+
+52.66.209.76 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.12"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+
+to check the playbook syntax
+ansible-playbook playbook.yaml --syntax-check
+
+dryrun
+ansible-playbook playbook.yaml --check
+
+create new role
+ansible-galaxy init myrole
+
+
+when you create the user using
+-name: Create the user
+ user:
+    name: dev
+    state: present
+
+this does create the home directory for the user
+/home/dev
+
+in linux when we craete the user using the useradd rak it will not craete the home directory 
+
+we need to craet the 
+useradd -m dev
+
+and also when switching the user if you don't use the  -m it keeps the current dir so if we use the - it will show the  that user dir
+su - rak
+
+
+we have 
+ansible_os_family  this has debian or redhat 
+ansible_distribution this include all distro like ubuntu,rhel,fedora,centos,kali
+
+basically deb and rh are parent distro
+

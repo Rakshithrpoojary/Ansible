@@ -1,0 +1,50 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for roles/raksh
+- name: Install nginx
+  apt:
+    name: apache2
+    state: present
+    update_cache: yes
+
+- name: Stop Apache
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+
+- name: Create file
+  file:
+    path: /home/ubuntu/name.txt
+    state: touch
+
+- name : craete a new file using copy
+  copy:
+    dest: /home/ubuntu/nameone.txt
+    content: |
+      Hello World
+
+- name: Create a user
+  user:
+    name: devops
+    state: present
+
+- name: Install multiple pkgs
+  apt:
+    name:
+      - git
+      - curl
+    state: present
+  when: ansible_os_family == "Debian"
+
+- name: copy the file
+  copy:
+    src: /home/ubuntu/Ansible/script.py
+    dest: /home/ubuntu/new.py
+
+- name: Host machine info
+  debug:
+    msg:
+      - "Hostname: {{ansible_hostname}}"
+      - "Memory: {{ansible_memory_mb.real.total}}"
+      - "OSfamily: {{ansible_os_family}}"
