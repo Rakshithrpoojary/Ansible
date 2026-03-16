@@ -65,6 +65,8 @@
         - curl
         - vim
     # if fike already there then don't paste
+   # Even with force: yes, Ansible still checks if the file content changed.
+#If the file is already identical, it won't copy again (idempotency).
     - name: Copy file
       copy:
         src: test.txt
