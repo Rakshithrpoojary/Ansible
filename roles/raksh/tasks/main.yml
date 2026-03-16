@@ -81,3 +81,6 @@
       debug:
         msg: "Disk usage is high: {{ disk_usage.stdout }}"
       when: disk_usage.stdout | regex_replace('%','') | int > 80
+    #  How to debug playbook?
+      ansible-playbook playbook.yml -vvv
+      ansible-inventory --list
