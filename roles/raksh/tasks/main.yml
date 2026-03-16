@@ -48,3 +48,19 @@
       - "Hostname: {{ansible_hostname}}"
       - "Memory: {{ansible_memory_mb.real.total}}"
       - "OSfamily: {{ansible_os_family}}"
+      
+- name: Check disk usage
+      shell: df -h
+      register: disk_output
+
+    - debug:
+        var: disk_output.stdout
+  
+    - name: Install multiple packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - git
+        - curl
+        - vim
