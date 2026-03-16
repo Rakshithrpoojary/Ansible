@@ -64,3 +64,18 @@
         - git
         - curl
         - vim
+    # if fike already there then don't paste
+    - name: Copy file
+      copy:
+        src: test.txt
+        dest: /tmp/test.txt
+        firce: no
+        
+    - name: Check disk usage
+      shell: df -h / | awk 'NR==2 {print $5}'
+      register: disk_usage
+
+    - name: Show warning
+      debug:
+        msg: "Disk usage is high: {{ disk_usage.stdout }}"
+      when: disk_usage.stdout | regex_replace('%','') | int > 80
