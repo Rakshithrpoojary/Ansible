@@ -103,3 +103,41 @@ ansible_distribution this include all distro like ubuntu,rhel,fedora,centos,kali
 
 basically deb and rh are parent distro
 
+ansible-galaxy collection install amazon.aws
+
+ansible-inventory -i inventory/aws_ec2.yaml --graph
+
+To debug in  ansible we use 
+ansible-playbook -i inventories/hosts firstplaybook.yaml -vvv
+
+to dry run
+ansible-playbook -i inventories/hosts firstplaybook.yaml --check 
+
+ansible-inventory -i inventories/hosts --list # showes in json format all the hosts inside this file
+ansible-inventory -i inventories/hosts --graph # showes graph  format all the hosts inside this file
+
+
+pass the variable file
+ansible-playbook --inventory inventories/aws_ec2.yaml firstplaybook.yml -e @group_vars/my_vault.yml
+
+Create the ansible vault
+ansible-vault create group_vars/aws_ec2.yaml 
+Enter the secret
+my_message: "This is test message from vault"
+edit
+You can only edit and view if secret is encrypted
+By default when you create secret it encrypted.But you can decrypt but its no use bcz you can see the content when you do edit and view 
+ansible-vault edit group_vars/my_vault.yml
+ansible-vault view group_vars/my_vault.yml
+
+now when you run the playbook you must do like this
+ansible-playbook -i inventories/aws_ec2 firstplaybook.yaml --ask-vault-pass
+
+
+To install plugin
+ansible-galaxy collection install amazon-aws
+
+
+serial 5 means it performs all tasks in any 5 machines first then it goes to next this will help for  ha bcz while working on any task if it fails then the next 5 will still be working .
+
+

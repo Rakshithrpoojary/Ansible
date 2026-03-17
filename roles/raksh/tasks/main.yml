@@ -48,3 +48,7 @@
       - "Hostname: {{ansible_hostname}}"
       - "Memory: {{ansible_memory_mb.real.total}}"
       - "OSfamily: {{ansible_os_family}}"
+
+- name: print pass
+  debug:
+    var: my

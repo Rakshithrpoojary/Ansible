@@ -1,0 +1,1462 @@
+{
+    "_meta": {
+        "hostvars": {
+            "ec2-13-127-216-162.ap-south-1.compute.amazonaws.com": {
+                "ami_launch_index": 0,
+                "ansible_host": {
+                    "__ansible_unsafe": "13.127.216.162"
+                },
+                "architecture": {
+                    "__ansible_unsafe": "x86_64"
+                },
+                "block_device_mappings": [
+                    {
+                        "device_name": {
+                            "__ansible_unsafe": "/dev/sda1"
+                        },
+                        "ebs": {
+                            "attach_time": "2026-03-17T06:49:16+00:00",
+                            "delete_on_termination": true,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            },
+                            "volume_id": {
+                                "__ansible_unsafe": "vol-01308ed0269638aa0"
+                            }
+                        }
+                    }
+                ],
+                "boot_mode": {
+                    "__ansible_unsafe": "uefi-preferred"
+                },
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": {
+                        "__ansible_unsafe": "open"
+                    }
+                },
+                "client_token": {
+                    "__ansible_unsafe": "ab48f542-b619-4dbf-92e0-a807858cd6e9"
+                },
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 2
+                },
+                "current_instance_boot_mode": {
+                    "__ansible_unsafe": "uefi"
+                },
+                "ebs_optimized": true,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": {
+                    "__ansible_unsafe": "xen"
+                },
+                "image_id": {
+                    "__ansible_unsafe": "ami-0a14f53a6fe4dfcd1"
+                },
+                "instance_id": {
+                    "__ansible_unsafe": "i-011302a2a687a399f"
+                },
+                "instance_type": {
+                    "__ansible_unsafe": "t3.micro"
+                },
+                "key_name": {
+                    "__ansible_unsafe": "script"
+                },
+                "launch_time": "2026-03-17T06:49:15+00:00",
+                "maintenance_options": {
+                    "auto_recovery": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "metadata_options": {
+                    "http_endpoint": {
+                        "__ansible_unsafe": "enabled"
+                    },
+                    "http_protocol_ipv6": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": {
+                        "__ansible_unsafe": "required"
+                    },
+                    "instance_metadata_tags": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "state": {
+                        "__ansible_unsafe": "applied"
+                    }
+                },
+                "monitoring": {
+                    "state": {
+                        "__ansible_unsafe": "disabled"
+                    }
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": {
+                                "__ansible_unsafe": "amazon"
+                            },
+                            "public_dns_name": {
+                                "__ansible_unsafe": "ec2-13-127-216-162.ap-south-1.compute.amazonaws.com"
+                            },
+                            "public_ip": {
+                                "__ansible_unsafe": "13.127.216.162"
+                            }
+                        },
+                        "attachment": {
+                            "attach_time": "2026-03-17T06:49:15+00:00",
+                            "attachment_id": {
+                                "__ansible_unsafe": "eni-attach-02280c451948986e8"
+                            },
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            }
+                        },
+                        "description": {
+                            "__ansible_unsafe": ""
+                        },
+                        "groups": [
+                            {
+                                "group_id": {
+                                    "__ansible_unsafe": "sg-02ce144b1717791cd"
+                                },
+                                "group_name": {
+                                    "__ansible_unsafe": "launch-wizard-8"
+                                }
+                            }
+                        ],
+                        "interface_type": {
+                            "__ansible_unsafe": "interface"
+                        },
+                        "ipv6_addresses": [],
+                        "mac_address": {
+                            "__ansible_unsafe": "02:7b:c6:75:4d:2d"
+                        },
+                        "network_interface_id": {
+                            "__ansible_unsafe": "eni-0d910f505f3d91f00"
+                        },
+                        "owner_id": {
+                            "__ansible_unsafe": "784318224800"
+                        },
+                        "private_dns_name": {
+                            "__ansible_unsafe": "ip-172-31-34-97.ap-south-1.compute.internal"
+                        },
+                        "private_ip_address": {
+                            "__ansible_unsafe": "172.31.34.97"
+                        },
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": {
+                                        "__ansible_unsafe": "amazon"
+                                    },
+                                    "public_dns_name": {
+                                        "__ansible_unsafe": "ec2-13-127-216-162.ap-south-1.compute.amazonaws.com"
+                                    },
+                                    "public_ip": {
+                                        "__ansible_unsafe": "13.127.216.162"
+                                    }
+                                },
+                                "primary": true,
+                                "private_dns_name": {
+                                    "__ansible_unsafe": "ip-172-31-34-97.ap-south-1.compute.internal"
+                                },
+                                "private_ip_address": {
+                                    "__ansible_unsafe": "172.31.34.97"
+                                }
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": {
+                            "__ansible_unsafe": "in-use"
+                        },
+                        "subnet_id": {
+                            "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                        },
+                        "vpc_id": {
+                            "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                        }
+                    }
+                ],
+                "owner_id": {
+                    "__ansible_unsafe": "784318224800"
+                },
+                "placement": {
+                    "availability_zone": {
+                        "__ansible_unsafe": "ap-south-1a"
+                    },
+                    "group_name": {
+                        "__ansible_unsafe": ""
+                    },
+                    "region": {
+                        "__ansible_unsafe": "ap-south-1"
+                    },
+                    "tenancy": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "platform_details": {
+                    "__ansible_unsafe": "Linux/UNIX"
+                },
+                "private_dns_name": {
+                    "__ansible_unsafe": "ip-172-31-34-97.ap-south-1.compute.internal"
+                },
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": true,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": {
+                        "__ansible_unsafe": "ip-name"
+                    }
+                },
+                "private_ip_address": {
+                    "__ansible_unsafe": "172.31.34.97"
+                },
+                "product_codes": [],
+                "public_dns_name": {
+                    "__ansible_unsafe": "ec2-13-127-216-162.ap-south-1.compute.amazonaws.com"
+                },
+                "public_ip_address": {
+                    "__ansible_unsafe": "13.127.216.162"
+                },
+                "requester_id": {
+                    "__ansible_unsafe": ""
+                },
+                "reservation_id": {
+                    "__ansible_unsafe": "r-01b26cb7b96444ca5"
+                },
+                "root_device_name": {
+                    "__ansible_unsafe": "/dev/sda1"
+                },
+                "root_device_type": {
+                    "__ansible_unsafe": "ebs"
+                },
+                "security_groups": [
+                    {
+                        "group_id": {
+                            "__ansible_unsafe": "sg-02ce144b1717791cd"
+                        },
+                        "group_name": {
+                            "__ansible_unsafe": "launch-wizard-8"
+                        }
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": {
+                        "__ansible_unsafe": "running"
+                    }
+                },
+                "state_transition_reason": {
+                    "__ansible_unsafe": ""
+                },
+                "subnet_id": {
+                    "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                },
+                "tags": {
+                    "Environment": {
+                        "__ansible_unsafe": "dev"
+                    },
+                    "Name": {
+                        "__ansible_unsafe": "web-01"
+                    }
+                },
+                "usage_operation": {
+                    "__ansible_unsafe": "RunInstances"
+                },
+                "usage_operation_update_time": "2026-03-17T06:49:15+00:00",
+                "virtualization_type": {
+                    "__ansible_unsafe": "hvm"
+                },
+                "vpc_id": {
+                    "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                }
+            },
+            "ec2-13-201-49-15.ap-south-1.compute.amazonaws.com": {
+                "ami_launch_index": 1,
+                "ansible_host": {
+                    "__ansible_unsafe": "13.201.49.15"
+                },
+                "architecture": {
+                    "__ansible_unsafe": "x86_64"
+                },
+                "block_device_mappings": [
+                    {
+                        "device_name": {
+                            "__ansible_unsafe": "/dev/sda1"
+                        },
+                        "ebs": {
+                            "attach_time": "2026-03-17T06:49:16+00:00",
+                            "delete_on_termination": true,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            },
+                            "volume_id": {
+                                "__ansible_unsafe": "vol-0626371a98c9cf8a0"
+                            }
+                        }
+                    }
+                ],
+                "boot_mode": {
+                    "__ansible_unsafe": "uefi-preferred"
+                },
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": {
+                        "__ansible_unsafe": "open"
+                    }
+                },
+                "client_token": {
+                    "__ansible_unsafe": "ab48f542-b619-4dbf-92e0-a807858cd6e9"
+                },
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 2
+                },
+                "current_instance_boot_mode": {
+                    "__ansible_unsafe": "uefi"
+                },
+                "ebs_optimized": true,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": {
+                    "__ansible_unsafe": "xen"
+                },
+                "image_id": {
+                    "__ansible_unsafe": "ami-0a14f53a6fe4dfcd1"
+                },
+                "instance_id": {
+                    "__ansible_unsafe": "i-084595bc874a2a14b"
+                },
+                "instance_type": {
+                    "__ansible_unsafe": "t3.micro"
+                },
+                "key_name": {
+                    "__ansible_unsafe": "script"
+                },
+                "launch_time": "2026-03-17T06:49:15+00:00",
+                "maintenance_options": {
+                    "auto_recovery": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "metadata_options": {
+                    "http_endpoint": {
+                        "__ansible_unsafe": "enabled"
+                    },
+                    "http_protocol_ipv6": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": {
+                        "__ansible_unsafe": "required"
+                    },
+                    "instance_metadata_tags": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "state": {
+                        "__ansible_unsafe": "applied"
+                    }
+                },
+                "monitoring": {
+                    "state": {
+                        "__ansible_unsafe": "disabled"
+                    }
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": {
+                                "__ansible_unsafe": "amazon"
+                            },
+                            "public_dns_name": {
+                                "__ansible_unsafe": "ec2-13-201-49-15.ap-south-1.compute.amazonaws.com"
+                            },
+                            "public_ip": {
+                                "__ansible_unsafe": "13.201.49.15"
+                            }
+                        },
+                        "attachment": {
+                            "attach_time": "2026-03-17T06:49:15+00:00",
+                            "attachment_id": {
+                                "__ansible_unsafe": "eni-attach-0f4256bf69e9f4684"
+                            },
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            }
+                        },
+                        "description": {
+                            "__ansible_unsafe": ""
+                        },
+                        "groups": [
+                            {
+                                "group_id": {
+                                    "__ansible_unsafe": "sg-02ce144b1717791cd"
+                                },
+                                "group_name": {
+                                    "__ansible_unsafe": "launch-wizard-8"
+                                }
+                            }
+                        ],
+                        "interface_type": {
+                            "__ansible_unsafe": "interface"
+                        },
+                        "ipv6_addresses": [],
+                        "mac_address": {
+                            "__ansible_unsafe": "02:3d:79:4a:6b:d5"
+                        },
+                        "network_interface_id": {
+                            "__ansible_unsafe": "eni-0e0f799341a0927c6"
+                        },
+                        "owner_id": {
+                            "__ansible_unsafe": "784318224800"
+                        },
+                        "private_dns_name": {
+                            "__ansible_unsafe": "ip-172-31-41-97.ap-south-1.compute.internal"
+                        },
+                        "private_ip_address": {
+                            "__ansible_unsafe": "172.31.41.97"
+                        },
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": {
+                                        "__ansible_unsafe": "amazon"
+                                    },
+                                    "public_dns_name": {
+                                        "__ansible_unsafe": "ec2-13-201-49-15.ap-south-1.compute.amazonaws.com"
+                                    },
+                                    "public_ip": {
+                                        "__ansible_unsafe": "13.201.49.15"
+                                    }
+                                },
+                                "primary": true,
+                                "private_dns_name": {
+                                    "__ansible_unsafe": "ip-172-31-41-97.ap-south-1.compute.internal"
+                                },
+                                "private_ip_address": {
+                                    "__ansible_unsafe": "172.31.41.97"
+                                }
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": {
+                            "__ansible_unsafe": "in-use"
+                        },
+                        "subnet_id": {
+                            "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                        },
+                        "vpc_id": {
+                            "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                        }
+                    }
+                ],
+                "owner_id": {
+                    "__ansible_unsafe": "784318224800"
+                },
+                "placement": {
+                    "availability_zone": {
+                        "__ansible_unsafe": "ap-south-1a"
+                    },
+                    "group_name": {
+                        "__ansible_unsafe": ""
+                    },
+                    "region": {
+                        "__ansible_unsafe": "ap-south-1"
+                    },
+                    "tenancy": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "platform_details": {
+                    "__ansible_unsafe": "Linux/UNIX"
+                },
+                "private_dns_name": {
+                    "__ansible_unsafe": "ip-172-31-41-97.ap-south-1.compute.internal"
+                },
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": true,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": {
+                        "__ansible_unsafe": "ip-name"
+                    }
+                },
+                "private_ip_address": {
+                    "__ansible_unsafe": "172.31.41.97"
+                },
+                "product_codes": [],
+                "public_dns_name": {
+                    "__ansible_unsafe": "ec2-13-201-49-15.ap-south-1.compute.amazonaws.com"
+                },
+                "public_ip_address": {
+                    "__ansible_unsafe": "13.201.49.15"
+                },
+                "requester_id": {
+                    "__ansible_unsafe": ""
+                },
+                "reservation_id": {
+                    "__ansible_unsafe": "r-01b26cb7b96444ca5"
+                },
+                "root_device_name": {
+                    "__ansible_unsafe": "/dev/sda1"
+                },
+                "root_device_type": {
+                    "__ansible_unsafe": "ebs"
+                },
+                "security_groups": [
+                    {
+                        "group_id": {
+                            "__ansible_unsafe": "sg-02ce144b1717791cd"
+                        },
+                        "group_name": {
+                            "__ansible_unsafe": "launch-wizard-8"
+                        }
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": {
+                        "__ansible_unsafe": "running"
+                    }
+                },
+                "state_transition_reason": {
+                    "__ansible_unsafe": ""
+                },
+                "subnet_id": {
+                    "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                },
+                "tags": {
+                    "Environment": {
+                        "__ansible_unsafe": "dev"
+                    },
+                    "Name": {
+                        "__ansible_unsafe": "web-02"
+                    }
+                },
+                "usage_operation": {
+                    "__ansible_unsafe": "RunInstances"
+                },
+                "usage_operation_update_time": "2026-03-17T06:49:15+00:00",
+                "virtualization_type": {
+                    "__ansible_unsafe": "hvm"
+                },
+                "vpc_id": {
+                    "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                }
+            },
+            "ec2-13-233-92-74.ap-south-1.compute.amazonaws.com": {
+                "ami_launch_index": 4,
+                "ansible_host": {
+                    "__ansible_unsafe": "13.233.92.74"
+                },
+                "architecture": {
+                    "__ansible_unsafe": "x86_64"
+                },
+                "block_device_mappings": [
+                    {
+                        "device_name": {
+                            "__ansible_unsafe": "/dev/sda1"
+                        },
+                        "ebs": {
+                            "attach_time": "2026-03-17T06:49:16+00:00",
+                            "delete_on_termination": true,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            },
+                            "volume_id": {
+                                "__ansible_unsafe": "vol-00e1187d1eb083e56"
+                            }
+                        }
+                    }
+                ],
+                "boot_mode": {
+                    "__ansible_unsafe": "uefi-preferred"
+                },
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": {
+                        "__ansible_unsafe": "open"
+                    }
+                },
+                "client_token": {
+                    "__ansible_unsafe": "ab48f542-b619-4dbf-92e0-a807858cd6e9"
+                },
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 2
+                },
+                "current_instance_boot_mode": {
+                    "__ansible_unsafe": "uefi"
+                },
+                "ebs_optimized": true,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": {
+                    "__ansible_unsafe": "xen"
+                },
+                "image_id": {
+                    "__ansible_unsafe": "ami-0a14f53a6fe4dfcd1"
+                },
+                "instance_id": {
+                    "__ansible_unsafe": "i-0d692ec0d71e4f3a9"
+                },
+                "instance_type": {
+                    "__ansible_unsafe": "t3.micro"
+                },
+                "key_name": {
+                    "__ansible_unsafe": "script"
+                },
+                "launch_time": "2026-03-17T06:49:15+00:00",
+                "maintenance_options": {
+                    "auto_recovery": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "metadata_options": {
+                    "http_endpoint": {
+                        "__ansible_unsafe": "enabled"
+                    },
+                    "http_protocol_ipv6": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": {
+                        "__ansible_unsafe": "required"
+                    },
+                    "instance_metadata_tags": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "state": {
+                        "__ansible_unsafe": "applied"
+                    }
+                },
+                "monitoring": {
+                    "state": {
+                        "__ansible_unsafe": "disabled"
+                    }
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": {
+                                "__ansible_unsafe": "amazon"
+                            },
+                            "public_dns_name": {
+                                "__ansible_unsafe": "ec2-13-233-92-74.ap-south-1.compute.amazonaws.com"
+                            },
+                            "public_ip": {
+                                "__ansible_unsafe": "13.233.92.74"
+                            }
+                        },
+                        "attachment": {
+                            "attach_time": "2026-03-17T06:49:15+00:00",
+                            "attachment_id": {
+                                "__ansible_unsafe": "eni-attach-042dc2f45e13c3b6a"
+                            },
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            }
+                        },
+                        "description": {
+                            "__ansible_unsafe": ""
+                        },
+                        "groups": [
+                            {
+                                "group_id": {
+                                    "__ansible_unsafe": "sg-02ce144b1717791cd"
+                                },
+                                "group_name": {
+                                    "__ansible_unsafe": "launch-wizard-8"
+                                }
+                            }
+                        ],
+                        "interface_type": {
+                            "__ansible_unsafe": "interface"
+                        },
+                        "ipv6_addresses": [],
+                        "mac_address": {
+                            "__ansible_unsafe": "02:c8:73:de:2f:e7"
+                        },
+                        "network_interface_id": {
+                            "__ansible_unsafe": "eni-023cba6a61d2d236c"
+                        },
+                        "owner_id": {
+                            "__ansible_unsafe": "784318224800"
+                        },
+                        "private_dns_name": {
+                            "__ansible_unsafe": "ip-172-31-37-8.ap-south-1.compute.internal"
+                        },
+                        "private_ip_address": {
+                            "__ansible_unsafe": "172.31.37.8"
+                        },
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": {
+                                        "__ansible_unsafe": "amazon"
+                                    },
+                                    "public_dns_name": {
+                                        "__ansible_unsafe": "ec2-13-233-92-74.ap-south-1.compute.amazonaws.com"
+                                    },
+                                    "public_ip": {
+                                        "__ansible_unsafe": "13.233.92.74"
+                                    }
+                                },
+                                "primary": true,
+                                "private_dns_name": {
+                                    "__ansible_unsafe": "ip-172-31-37-8.ap-south-1.compute.internal"
+                                },
+                                "private_ip_address": {
+                                    "__ansible_unsafe": "172.31.37.8"
+                                }
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": {
+                            "__ansible_unsafe": "in-use"
+                        },
+                        "subnet_id": {
+                            "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                        },
+                        "vpc_id": {
+                            "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                        }
+                    }
+                ],
+                "owner_id": {
+                    "__ansible_unsafe": "784318224800"
+                },
+                "placement": {
+                    "availability_zone": {
+                        "__ansible_unsafe": "ap-south-1a"
+                    },
+                    "group_name": {
+                        "__ansible_unsafe": ""
+                    },
+                    "region": {
+                        "__ansible_unsafe": "ap-south-1"
+                    },
+                    "tenancy": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "platform_details": {
+                    "__ansible_unsafe": "Linux/UNIX"
+                },
+                "private_dns_name": {
+                    "__ansible_unsafe": "ip-172-31-37-8.ap-south-1.compute.internal"
+                },
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": true,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": {
+                        "__ansible_unsafe": "ip-name"
+                    }
+                },
+                "private_ip_address": {
+                    "__ansible_unsafe": "172.31.37.8"
+                },
+                "product_codes": [],
+                "public_dns_name": {
+                    "__ansible_unsafe": "ec2-13-233-92-74.ap-south-1.compute.amazonaws.com"
+                },
+                "public_ip_address": {
+                    "__ansible_unsafe": "13.233.92.74"
+                },
+                "requester_id": {
+                    "__ansible_unsafe": ""
+                },
+                "reservation_id": {
+                    "__ansible_unsafe": "r-01b26cb7b96444ca5"
+                },
+                "root_device_name": {
+                    "__ansible_unsafe": "/dev/sda1"
+                },
+                "root_device_type": {
+                    "__ansible_unsafe": "ebs"
+                },
+                "security_groups": [
+                    {
+                        "group_id": {
+                            "__ansible_unsafe": "sg-02ce144b1717791cd"
+                        },
+                        "group_name": {
+                            "__ansible_unsafe": "launch-wizard-8"
+                        }
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": {
+                        "__ansible_unsafe": "running"
+                    }
+                },
+                "state_transition_reason": {
+                    "__ansible_unsafe": ""
+                },
+                "subnet_id": {
+                    "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                },
+                "tags": {
+                    "Environment": {
+                        "__ansible_unsafe": "dev"
+                    },
+                    "Name": {
+                        "__ansible_unsafe": "web-05"
+                    }
+                },
+                "usage_operation": {
+                    "__ansible_unsafe": "RunInstances"
+                },
+                "usage_operation_update_time": "2026-03-17T06:49:15+00:00",
+                "virtualization_type": {
+                    "__ansible_unsafe": "hvm"
+                },
+                "vpc_id": {
+                    "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                }
+            },
+            "ec2-3-110-143-169.ap-south-1.compute.amazonaws.com": {
+                "ami_launch_index": 2,
+                "ansible_host": {
+                    "__ansible_unsafe": "3.110.143.169"
+                },
+                "architecture": {
+                    "__ansible_unsafe": "x86_64"
+                },
+                "block_device_mappings": [
+                    {
+                        "device_name": {
+                            "__ansible_unsafe": "/dev/sda1"
+                        },
+                        "ebs": {
+                            "attach_time": "2026-03-17T06:49:16+00:00",
+                            "delete_on_termination": true,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            },
+                            "volume_id": {
+                                "__ansible_unsafe": "vol-07a38d2de552d1c26"
+                            }
+                        }
+                    }
+                ],
+                "boot_mode": {
+                    "__ansible_unsafe": "uefi-preferred"
+                },
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": {
+                        "__ansible_unsafe": "open"
+                    }
+                },
+                "client_token": {
+                    "__ansible_unsafe": "ab48f542-b619-4dbf-92e0-a807858cd6e9"
+                },
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 2
+                },
+                "current_instance_boot_mode": {
+                    "__ansible_unsafe": "uefi"
+                },
+                "ebs_optimized": true,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": {
+                    "__ansible_unsafe": "xen"
+                },
+                "image_id": {
+                    "__ansible_unsafe": "ami-0a14f53a6fe4dfcd1"
+                },
+                "instance_id": {
+                    "__ansible_unsafe": "i-0040dd01346a5dd72"
+                },
+                "instance_type": {
+                    "__ansible_unsafe": "t3.micro"
+                },
+                "key_name": {
+                    "__ansible_unsafe": "script"
+                },
+                "launch_time": "2026-03-17T06:49:15+00:00",
+                "maintenance_options": {
+                    "auto_recovery": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "metadata_options": {
+                    "http_endpoint": {
+                        "__ansible_unsafe": "enabled"
+                    },
+                    "http_protocol_ipv6": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": {
+                        "__ansible_unsafe": "required"
+                    },
+                    "instance_metadata_tags": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "state": {
+                        "__ansible_unsafe": "applied"
+                    }
+                },
+                "monitoring": {
+                    "state": {
+                        "__ansible_unsafe": "disabled"
+                    }
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": {
+                                "__ansible_unsafe": "amazon"
+                            },
+                            "public_dns_name": {
+                                "__ansible_unsafe": "ec2-3-110-143-169.ap-south-1.compute.amazonaws.com"
+                            },
+                            "public_ip": {
+                                "__ansible_unsafe": "3.110.143.169"
+                            }
+                        },
+                        "attachment": {
+                            "attach_time": "2026-03-17T06:49:15+00:00",
+                            "attachment_id": {
+                                "__ansible_unsafe": "eni-attach-0fa3f9dc595d0e2a4"
+                            },
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            }
+                        },
+                        "description": {
+                            "__ansible_unsafe": ""
+                        },
+                        "groups": [
+                            {
+                                "group_id": {
+                                    "__ansible_unsafe": "sg-02ce144b1717791cd"
+                                },
+                                "group_name": {
+                                    "__ansible_unsafe": "launch-wizard-8"
+                                }
+                            }
+                        ],
+                        "interface_type": {
+                            "__ansible_unsafe": "interface"
+                        },
+                        "ipv6_addresses": [],
+                        "mac_address": {
+                            "__ansible_unsafe": "02:5f:d8:b0:fc:dd"
+                        },
+                        "network_interface_id": {
+                            "__ansible_unsafe": "eni-0829eeb8e3925bb95"
+                        },
+                        "owner_id": {
+                            "__ansible_unsafe": "784318224800"
+                        },
+                        "private_dns_name": {
+                            "__ansible_unsafe": "ip-172-31-40-19.ap-south-1.compute.internal"
+                        },
+                        "private_ip_address": {
+                            "__ansible_unsafe": "172.31.40.19"
+                        },
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": {
+                                        "__ansible_unsafe": "amazon"
+                                    },
+                                    "public_dns_name": {
+                                        "__ansible_unsafe": "ec2-3-110-143-169.ap-south-1.compute.amazonaws.com"
+                                    },
+                                    "public_ip": {
+                                        "__ansible_unsafe": "3.110.143.169"
+                                    }
+                                },
+                                "primary": true,
+                                "private_dns_name": {
+                                    "__ansible_unsafe": "ip-172-31-40-19.ap-south-1.compute.internal"
+                                },
+                                "private_ip_address": {
+                                    "__ansible_unsafe": "172.31.40.19"
+                                }
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": {
+                            "__ansible_unsafe": "in-use"
+                        },
+                        "subnet_id": {
+                            "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                        },
+                        "vpc_id": {
+                            "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                        }
+                    }
+                ],
+                "owner_id": {
+                    "__ansible_unsafe": "784318224800"
+                },
+                "placement": {
+                    "availability_zone": {
+                        "__ansible_unsafe": "ap-south-1a"
+                    },
+                    "group_name": {
+                        "__ansible_unsafe": ""
+                    },
+                    "region": {
+                        "__ansible_unsafe": "ap-south-1"
+                    },
+                    "tenancy": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "platform_details": {
+                    "__ansible_unsafe": "Linux/UNIX"
+                },
+                "private_dns_name": {
+                    "__ansible_unsafe": "ip-172-31-40-19.ap-south-1.compute.internal"
+                },
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": true,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": {
+                        "__ansible_unsafe": "ip-name"
+                    }
+                },
+                "private_ip_address": {
+                    "__ansible_unsafe": "172.31.40.19"
+                },
+                "product_codes": [],
+                "public_dns_name": {
+                    "__ansible_unsafe": "ec2-3-110-143-169.ap-south-1.compute.amazonaws.com"
+                },
+                "public_ip_address": {
+                    "__ansible_unsafe": "3.110.143.169"
+                },
+                "requester_id": {
+                    "__ansible_unsafe": ""
+                },
+                "reservation_id": {
+                    "__ansible_unsafe": "r-01b26cb7b96444ca5"
+                },
+                "root_device_name": {
+                    "__ansible_unsafe": "/dev/sda1"
+                },
+                "root_device_type": {
+                    "__ansible_unsafe": "ebs"
+                },
+                "security_groups": [
+                    {
+                        "group_id": {
+                            "__ansible_unsafe": "sg-02ce144b1717791cd"
+                        },
+                        "group_name": {
+                            "__ansible_unsafe": "launch-wizard-8"
+                        }
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": {
+                        "__ansible_unsafe": "running"
+                    }
+                },
+                "state_transition_reason": {
+                    "__ansible_unsafe": ""
+                },
+                "subnet_id": {
+                    "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                },
+                "tags": {
+                    "Environment": {
+                        "__ansible_unsafe": "dev"
+                    },
+                    "Name": {
+                        "__ansible_unsafe": "web-03"
+                    }
+                },
+                "usage_operation": {
+                    "__ansible_unsafe": "RunInstances"
+                },
+                "usage_operation_update_time": "2026-03-17T06:49:15+00:00",
+                "virtualization_type": {
+                    "__ansible_unsafe": "hvm"
+                },
+                "vpc_id": {
+                    "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                }
+            },
+            "ec2-52-66-141-68.ap-south-1.compute.amazonaws.com": {
+                "ami_launch_index": 3,
+                "ansible_host": {
+                    "__ansible_unsafe": "52.66.141.68"
+                },
+                "architecture": {
+                    "__ansible_unsafe": "x86_64"
+                },
+                "block_device_mappings": [
+                    {
+                        "device_name": {
+                            "__ansible_unsafe": "/dev/sda1"
+                        },
+                        "ebs": {
+                            "attach_time": "2026-03-17T06:49:16+00:00",
+                            "delete_on_termination": true,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            },
+                            "volume_id": {
+                                "__ansible_unsafe": "vol-03d60ca0bf93b1473"
+                            }
+                        }
+                    }
+                ],
+                "boot_mode": {
+                    "__ansible_unsafe": "uefi-preferred"
+                },
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": {
+                        "__ansible_unsafe": "open"
+                    }
+                },
+                "client_token": {
+                    "__ansible_unsafe": "ab48f542-b619-4dbf-92e0-a807858cd6e9"
+                },
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 2
+                },
+                "current_instance_boot_mode": {
+                    "__ansible_unsafe": "uefi"
+                },
+                "ebs_optimized": true,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": {
+                    "__ansible_unsafe": "xen"
+                },
+                "image_id": {
+                    "__ansible_unsafe": "ami-0a14f53a6fe4dfcd1"
+                },
+                "instance_id": {
+                    "__ansible_unsafe": "i-0274bc4043168624f"
+                },
+                "instance_type": {
+                    "__ansible_unsafe": "t3.micro"
+                },
+                "key_name": {
+                    "__ansible_unsafe": "script"
+                },
+                "launch_time": "2026-03-17T06:49:15+00:00",
+                "maintenance_options": {
+                    "auto_recovery": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "metadata_options": {
+                    "http_endpoint": {
+                        "__ansible_unsafe": "enabled"
+                    },
+                    "http_protocol_ipv6": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": {
+                        "__ansible_unsafe": "required"
+                    },
+                    "instance_metadata_tags": {
+                        "__ansible_unsafe": "disabled"
+                    },
+                    "state": {
+                        "__ansible_unsafe": "applied"
+                    }
+                },
+                "monitoring": {
+                    "state": {
+                        "__ansible_unsafe": "disabled"
+                    }
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": {
+                                "__ansible_unsafe": "amazon"
+                            },
+                            "public_dns_name": {
+                                "__ansible_unsafe": "ec2-52-66-141-68.ap-south-1.compute.amazonaws.com"
+                            },
+                            "public_ip": {
+                                "__ansible_unsafe": "52.66.141.68"
+                            }
+                        },
+                        "attachment": {
+                            "attach_time": "2026-03-17T06:49:15+00:00",
+                            "attachment_id": {
+                                "__ansible_unsafe": "eni-attach-009bc3229041d41d1"
+                            },
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": {
+                                "__ansible_unsafe": "attached"
+                            }
+                        },
+                        "description": {
+                            "__ansible_unsafe": ""
+                        },
+                        "groups": [
+                            {
+                                "group_id": {
+                                    "__ansible_unsafe": "sg-02ce144b1717791cd"
+                                },
+                                "group_name": {
+                                    "__ansible_unsafe": "launch-wizard-8"
+                                }
+                            }
+                        ],
+                        "interface_type": {
+                            "__ansible_unsafe": "interface"
+                        },
+                        "ipv6_addresses": [],
+                        "mac_address": {
+                            "__ansible_unsafe": "02:bc:14:50:80:ed"
+                        },
+                        "network_interface_id": {
+                            "__ansible_unsafe": "eni-0f7bb8002a57eceeb"
+                        },
+                        "owner_id": {
+                            "__ansible_unsafe": "784318224800"
+                        },
+                        "private_dns_name": {
+                            "__ansible_unsafe": "ip-172-31-42-199.ap-south-1.compute.internal"
+                        },
+                        "private_ip_address": {
+                            "__ansible_unsafe": "172.31.42.199"
+                        },
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": {
+                                        "__ansible_unsafe": "amazon"
+                                    },
+                                    "public_dns_name": {
+                                        "__ansible_unsafe": "ec2-52-66-141-68.ap-south-1.compute.amazonaws.com"
+                                    },
+                                    "public_ip": {
+                                        "__ansible_unsafe": "52.66.141.68"
+                                    }
+                                },
+                                "primary": true,
+                                "private_dns_name": {
+                                    "__ansible_unsafe": "ip-172-31-42-199.ap-south-1.compute.internal"
+                                },
+                                "private_ip_address": {
+                                    "__ansible_unsafe": "172.31.42.199"
+                                }
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": {
+                            "__ansible_unsafe": "in-use"
+                        },
+                        "subnet_id": {
+                            "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                        },
+                        "vpc_id": {
+                            "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                        }
+                    }
+                ],
+                "owner_id": {
+                    "__ansible_unsafe": "784318224800"
+                },
+                "placement": {
+                    "availability_zone": {
+                        "__ansible_unsafe": "ap-south-1a"
+                    },
+                    "group_name": {
+                        "__ansible_unsafe": ""
+                    },
+                    "region": {
+                        "__ansible_unsafe": "ap-south-1"
+                    },
+                    "tenancy": {
+                        "__ansible_unsafe": "default"
+                    }
+                },
+                "platform_details": {
+                    "__ansible_unsafe": "Linux/UNIX"
+                },
+                "private_dns_name": {
+                    "__ansible_unsafe": "ip-172-31-42-199.ap-south-1.compute.internal"
+                },
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": true,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": {
+                        "__ansible_unsafe": "ip-name"
+                    }
+                },
+                "private_ip_address": {
+                    "__ansible_unsafe": "172.31.42.199"
+                },
+                "product_codes": [],
+                "public_dns_name": {
+                    "__ansible_unsafe": "ec2-52-66-141-68.ap-south-1.compute.amazonaws.com"
+                },
+                "public_ip_address": {
+                    "__ansible_unsafe": "52.66.141.68"
+                },
+                "requester_id": {
+                    "__ansible_unsafe": ""
+                },
+                "reservation_id": {
+                    "__ansible_unsafe": "r-01b26cb7b96444ca5"
+                },
+                "root_device_name": {
+                    "__ansible_unsafe": "/dev/sda1"
+                },
+                "root_device_type": {
+                    "__ansible_unsafe": "ebs"
+                },
+                "security_groups": [
+                    {
+                        "group_id": {
+                            "__ansible_unsafe": "sg-02ce144b1717791cd"
+                        },
+                        "group_name": {
+                            "__ansible_unsafe": "launch-wizard-8"
+                        }
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": {
+                        "__ansible_unsafe": "running"
+                    }
+                },
+                "state_transition_reason": {
+                    "__ansible_unsafe": ""
+                },
+                "subnet_id": {
+                    "__ansible_unsafe": "subnet-0c95d3aad3c2daacd"
+                },
+                "tags": {
+                    "Environment": {
+                        "__ansible_unsafe": "dev"
+                    },
+                    "Name": {
+                        "__ansible_unsafe": "web-04"
+                    }
+                },
+                "usage_operation": {
+                    "__ansible_unsafe": "RunInstances"
+                },
+                "usage_operation_update_time": "2026-03-17T06:49:15+00:00",
+                "virtualization_type": {
+                    "__ansible_unsafe": "hvm"
+                },
+                "vpc_id": {
+                    "__ansible_unsafe": "vpc-035eec6df74ff0d48"
+                }
+            }
+        },
+        "profile": "inventory_legacy"
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "aws_ec2",
+            "env_dev",
+            "dev_web_03",
+            "dev_web_01",
+            "dev_web_04",
+            "dev_web_02",
+            "dev_web_05"
+        ]
+    },
+    "aws_ec2": {
+        "hosts": [
+            "ec2-3-110-143-169.ap-south-1.compute.amazonaws.com",
+            "ec2-13-127-216-162.ap-south-1.compute.amazonaws.com",
+            "ec2-52-66-141-68.ap-south-1.compute.amazonaws.com",
+            "ec2-13-201-49-15.ap-south-1.compute.amazonaws.com",
+            "ec2-13-233-92-74.ap-south-1.compute.amazonaws.com"
+        ]
+    },
+    "dev_web_01": {
+        "hosts": [
+            "ec2-13-127-216-162.ap-south-1.compute.amazonaws.com"
+        ]
+    },
+    "dev_web_02": {
+        "hosts": [
+            "ec2-13-201-49-15.ap-south-1.compute.amazonaws.com"
+        ]
+    },
+    "dev_web_03": {
+        "hosts": [
+            "ec2-3-110-143-169.ap-south-1.compute.amazonaws.com"
+        ]
+    },
+    "dev_web_04": {
+        "hosts": [
+            "ec2-52-66-141-68.ap-south-1.compute.amazonaws.com"
+        ]
+    },
+    "dev_web_05": {
+        "hosts": [
+            "ec2-13-233-92-74.ap-south-1.compute.amazonaws.com"
+        ]
+    },
+    "env_dev": {
+        "hosts": [
+            "ec2-3-110-143-169.ap-south-1.compute.amazonaws.com",
+            "ec2-13-127-216-162.ap-south-1.compute.amazonaws.com",
+            "ec2-52-66-141-68.ap-south-1.compute.amazonaws.com",
+            "ec2-13-201-49-15.ap-south-1.compute.amazonaws.com",
+            "ec2-13-233-92-74.ap-south-1.compute.amazonaws.com"
+        ]
+    }
+}
