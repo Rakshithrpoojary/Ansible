@@ -140,4 +140,6 @@ ansible-galaxy collection install amazon-aws
 
 serial 5 means it performs all tasks in any 5 machines first then it goes to next this will help for  ha bcz while working on any task if it fails then the next 5 will still be working .
 
+we need "{{}}" to use the variable in anywhere inside code but not inside the debug var bcz its already expecting var
+
 
