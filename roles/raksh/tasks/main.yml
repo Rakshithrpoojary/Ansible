@@ -48,7 +48,39 @@
       - "Hostname: {{ansible_hostname}}"
       - "Memory: {{ansible_memory_mb.real.total}}"
       - "OSfamily: {{ansible_os_family}}"
+      
+- name: Check disk usage
+      shell: df -h
+      register: disk_output
 
-- name: print pass
-  debug:
-    var: my
+    - debug:
+        var: disk_output.stdout
+  
+    - name: Install multiple packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - git
+        - curl
+        - vim
+    # if fike already there then don't paste
+   # Even with force: yes, Ansible still checks if the file content changed.
+#If the file is already identical, it won't copy again (idempotency).
+    - name: Copy file
+      copy:
+        src: test.txt
+        dest: /tmp/test.txt
+        firce: no
+        
+    - name: Check disk usage
+      shell: df -h / | awk 'NR==2 {print $5}'
+      register: disk_usage
+
+    - name: Show warning
+      debug:
+        msg: "Disk usage is high: {{ disk_usage.stdout }}"
+      when: disk_usage.stdout | regex_replace('%','') | int > 80
+    #  How to debug playbook?
+      ansible-playbook playbook.yml -vvv
+      ansible-inventory --list
