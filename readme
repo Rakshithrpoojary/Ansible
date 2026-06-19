@@ -1,3 +1,62 @@
+ansible-project/
+│
+├── ansible.cfg
+├── README.md
+│
+├── inventory/
+│   ├── hosts.ini
+│   ├── aws_ec2.yml          # dynamic inventory (optional)
+│   ├── group_vars/
+│   │   ├── all.yml
+│   │   ├── web.yml
+│   │   └── db.yml
+│   │
+│   └── host_vars/
+│       ├── server1.yml
+│       └── server2.yml
+│
+├── playbooks/
+│   ├── site.yml
+│   ├── web.yml
+│   ├── db.yml
+│   └── deploy_app.yml
+│
+├── roles/
+│   ├── common/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── handlers/
+│   │   │   └── main.yml
+│   │   ├── templates/
+│   │   ├── files/
+│   │   ├── vars/
+│   │   │   └── main.yml
+│   │   └── defaults/
+│   │       └── main.yml
+│   │
+│   ├── web/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── handlers/
+│   │   ├── templates/
+│   │   ├── vars/
+│   │   └── defaults/
+│   │
+│   └── db/
+│       ├── tasks/
+│       │   └── main.yml
+│       └── handlers/
+│
+├── files/
+│   └── app.jar
+│
+├── templates/
+│   └── nginx.conf.j2
+│
+└── scripts/
+    └── bootstrap.sh
+
+
 In ansible to see the config we use
 ansible --version
 
